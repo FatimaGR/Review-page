@@ -4,11 +4,58 @@ body{
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
   padding: 60px 100px;
+  color: black;
+  /* transition: all 0.5s; */
 }
+a{
+  text-decoration: none;
+  color: black;
+}
+body .bx-sun,
+body .logo-dark,
+body .bx-menu{
+  display: none;
+}
+.dark-mode{
+  background-color: #242424;
+  color: white;
+}
+.dark-mode a{
+  color: white;
+}
+.dark-mode .bx-moon,
+.dark-mode .logo-light{
+  display: none;
+}
+.dark-mode .bx-sun,
+.dark-mode .logo-dark{
+  display: flex;
+}
+
 /* header styles */
+header ul{
+  list-style: none;
+  padding: 0;
+}
+.visible{
+  opacity: 1;
+  visibility: visible;
+}
 
 /* review styles */
 
 /* other reviews styles */
 
 /* footer styles */
+
+@media (max-width: 420px){
+  body .bx-menu{
+    display: flex;
+    position: relative;
+  }
+  header ul{
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+  }
+}
