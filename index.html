@@ -11,13 +11,13 @@
   <header>
     <img src="./images/light-logo.png" alt="Logo Star Studio" class="logo logo-light">
     <img src="./images/dark-logo.png" alt="Logo Star Studio" class="logo logo-dark">
-    <div>
+    <div class="options">
       <ul id="menu">
         <li><a href="#">Inicio</a></li>
         <li><a href="#">Blog</a></li>
         <li><a href="#">Nosotros</a></li>
       </ul>
-      <button id="dark-button">
+      <button id="dark-button" class="dark-button">
         <i class='bx bx-moon'></i>
         <i class='bx bx-sun'></i>
       </button>
@@ -27,22 +27,28 @@
 
   <main>
     <section class="review">
-      <h1>Curso intensivo de amor</h1>
-      <h3>Y el rol de los padres en los estudios de sus hijos</h3>
-      <img src="./images/banner-cursointensivo.png" alt="Curso intensivo de amor banner">
+      <div class="review-title">
+        <h1>Curso intensivo de amor</h1>
+        <h3>Y el rol de los padres en los estudios de sus hijos</h3>
+        <img src="./images/banner-cursointensivo.png" alt="Curso intensivo de amor banner">
+      </div>
       
-      <p>"Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat aliquip ex ea commodo."</p>
+      <br>
+      <p><b>"Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat aliquip ex ea commodo."</b></p>
       <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
       <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
       <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-      <p>Haz click aquí para ver la serie en Netflix.</p>
+      <p><a href="https://www.netflix.com/title/81649877"><b>Haz click aquí para ver la serie en Netflix.</b></a></p>
+
+      <iframe src="https://www.youtube.com/embed/FBohznN3QjU?si=twfIwqbq_ncb3bVb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
       <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
       <p>¡Gracias por leer! Puedes encontrar recomendaciones de otras reseñas aquí.</p>
 
-      <div>
+      <br>
+      <div class="general-info">
         <p>CATEGORÍAS: Romance</p>
-        <div>
+        <div class="likes">
           <p>0</p>
           <i class='bx bxs-heart'></i>
         </div>
@@ -52,16 +58,16 @@
     </section>
     <section class="other-reviews">
       <h2>Otras reseñas:</h2>
-      <div>
-        <div>
+      <div class="reviews-cards">
+        <div class="review-card">
           <img src="./images/banner-cursointensivo.png" alt="curso intensivo de amor">
           <p><a href="#">Curso intensivo de amor. Y el rol de los padres en los estudios de sus hijos.</a></p>
         </div>
-        <div>
+        <div class="review-card">
           <img src="./images/banner-navillera.jpeg" alt="navillera">
           <p><a href="#">Navillera. No hay edad para cumplir tus sueños.</a></p>
         </div>
-        <div>
+        <div class="review-card">
           <img src="./images/banner-heartshines.jpeg" alt="el momento en el que el corazón brilla">
           <p><a href="#">El momento en el que el corazón brilla. Y el uso responsable de la tecnología.</a></p>
         </div>
@@ -77,11 +83,12 @@
       <li><a href="#">Blog</a></li>
       <li><a href="#">Nosotros</a></li>
     </ul>
-    <div>
-      <i class='bx bxl-pinterest'></i>
-      <i class='bx bxl-instagram-alt'></i>
-      <i class='bx bxl-facebook-circle'></i>
+    <div class="social-media">
+      <a href="https://www.pinterest.com/"><i class='bx bxl-pinterest'></i></a>
+      <a href="https://www.instagram.com/"><i class='bx bxl-instagram-alt'></i></a>
+      <a href="https://www.facebook.com/"><i class='bx bxl-facebook-circle'></i></a>
     </div>
+    <p>Creado por <a href="https://github.com/FatimaGR">FátimaGR</a></p>
   </footer>
 
   <!-- Javascript -->

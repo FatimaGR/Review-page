@@ -1,15 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;600&family=Roboto+Flex:opsz,wght@8..144,400;8..144,500&family=Roboto:wght@400;500&display=swap');
 /* general */
+*{
+  margin: 0;
+  padding: 0;
+}
 body{
   font-family: 'Roboto', sans-serif;
-  font-size: 18px;
-  padding: 60px 100px;
-  color: black;
+  font-size: 16px;
+  padding: 3.75em 6.25em;
+  color: #000;
   /* transition: all 0.5s; */
 }
 a{
   text-decoration: none;
-  color: black;
+  color: #000;
+}
+a:hover,
+.bx:hover{
+  color: #9a1775;
+}
+.bx-sun,
+.bx-moon{
+  font-size: 28px;
+}
+.bx-menu{
+  font-size: 30px;
 }
 body .bx-sun,
 body .logo-dark,
@@ -18,10 +33,11 @@ body .bx-menu{
 }
 .dark-mode{
   background-color: #242424;
-  color: white;
+  color: #fff;
 }
-.dark-mode a{
-  color: white;
+.dark-mode a,
+.dark-mode .bx-sun{
+  color: #fff;
 }
 .dark-mode .bx-moon,
 .dark-mode .logo-light{
@@ -33,29 +49,209 @@ body .bx-menu{
 }
 
 /* header styles */
+header{
+  display: flex;
+  justify-content: space-between;
+}
 header ul{
   list-style: none;
+  display: flex;
   padding: 0;
+  gap: 1.875em;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 20px;
 }
 .visible{
   opacity: 1;
   visibility: visible;
 }
+header .logo{
+  max-height: 3.938em;
+}
+header .options{
+  display: flex;
+  align-items: center;
+  gap: 1.25em;
+}
+header .dark-button{
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+/* main styles */
+main{
+  margin: 5em 0;
+  padding: 0 2.5em;
+}
 
 /* review styles */
+h1{
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 45px;
+  font-weight: 600;
+  text-align: center;
+}
+h3{
+  font-family: 'Roboto Flex', sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  text-align: center;
+}
+.review{
+  align-items: center;
+}
+.review,
+.review-title{
+  display: flex;
+  flex-direction: column;
+  gap: 1.875em;
+}
+.review-title{
+  align-items: center;
+}
+.review img{
+  max-width: 40.625em;
+}
+.review iframe{
+  min-height: 19.688em;
+  width: 35em;
+}
+.review p{
+  font-size: 18px;
+  width: 100%;
+}
+.review .general-info,
+.review .likes{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.313em;
+}
+.review .general-info{
+  width: 100%;
+}
+.review .bxs-heart{
+  font-size: 25px;
+}
+.review hr{
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+}
+.dark-mode .review hr{
+  background-color: #fff;
+}
 
 /* other reviews styles */
+.other-reviews{
+  padding: 2.5em 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.875em;
+}
+h2{
+  font-size: 22px;
+  text-transform: uppercase;
+}
+.reviews-cards{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  gap: 1.875em;
+}
+.review-card{
+  width: 18.25em;
+  font-size: 18px;
+  border: solid 2px #000;
+}
+.dark-mode .review-card{
+  border: solid 2px #fff;
+}
+.review-card img{
+  max-height: 175px;
+  width: 100%;
+  object-fit: cover;
+}
+.review-card p{
+  margin: 1em;
+}
 
 /* footer styles */
+footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.875em;
+}
+footer .logo{
+  max-height: 3.188em;
+}
+footer ul{
+  list-style: none;
+  display: flex;
+  padding: 0;
+  gap: 5em;
+  text-align: center;
+}
+footer .social-media{
+  display: flex;
+  gap: 1.875em;
+  font-size: 28px;
+}
 
-@media (max-width: 420px){
+/* responsive styles */
+@media (max-width: 860px){
+  body{
+    padding: 1.25em;
+  }
   body .bx-menu{
     display: flex;
+    cursor: pointer;
+  }
+  header{
     position: relative;
   }
   header ul{
     opacity: 0;
     visibility: hidden;
     position: absolute;
+    background-color: #ffffffe0;
+    flex-direction: column;
+    padding: 1.875em;
+    right: 0.625em;
+    left: 0.625em;
+    top: 100%;
+    font-size: 18px;
+  }
+  .dark-mode header ul a{
+    color: #000;
+  }
+  .logo{
+    height: 48px;
+  }
+  main{
+    margin: 2.5em 0;
+    padding: 0;
+  }
+  h1{
+    font-size: 35px;
+  }
+  h3, .other-reviews{
+    font-size: 18px;
+  }
+  .review p{
+    font-size: 14px;
+  }
+  .review img{
+    max-width: 90%;
+  }
+  .review iframe{
+    min-height: 12em;
+    max-width: 90%;
+  }
+  footer ul{
+    flex-direction: column;
+    gap: 1em;
   }
 }
