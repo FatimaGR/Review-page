@@ -3,7 +3,7 @@ const darkMode = document.querySelector("#dark-button");
 const menuButton = document.querySelector("#menu-button");
 const menu = document.querySelector("#menu");
 
-darkMode.addEventListener("click", e =>{
+darkMode.addEventListener("click", () => {
   body.classList.toggle("dark-mode");
 });
 

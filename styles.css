@@ -9,14 +9,16 @@ body{
   font-size: 16px;
   padding: 3.75em 6.25em;
   color: #000;
-  /* transition: all 0.5s; */
+  transition: all 0.5s;
 }
 a{
   text-decoration: none;
   color: #000;
 }
 a:hover,
-.bx:hover{
+.bx:hover,
+.dark-mode a:hover,
+.dark-mode .bx:hover{
   color: #9a1775;
 }
 .bx-sun,
@@ -88,13 +90,13 @@ main{
 /* review styles */
 h1{
   font-family: 'Red Hat Display', sans-serif;
-  font-size: 45px;
+  font-size: 2.813em;
   font-weight: 600;
   text-align: center;
 }
 h3{
   font-family: 'Roboto Flex', sans-serif;
-  font-size: 25px;
+  font-size: 1.563em;
   font-weight: 400;
   text-align: center;
 }
@@ -118,7 +120,7 @@ h3{
   width: 35em;
 }
 .review p{
-  font-size: 18px;
+  font-size: 1.125em;
   width: 100%;
 }
 .review .general-info,
@@ -193,6 +195,7 @@ footer ul{
   padding: 0;
   gap: 5em;
   text-align: center;
+  font-size: 16px;
 }
 footer .social-media{
   display: flex;
@@ -204,6 +207,7 @@ footer .social-media{
 @media (max-width: 860px){
   body{
     padding: 1.25em;
+    font-size: 14px;
   }
   body .bx-menu{
     display: flex;
@@ -222,33 +226,24 @@ footer .social-media{
     right: 0.625em;
     left: 0.625em;
     top: 100%;
-    font-size: 18px;
+    font-size: 1.286em;
   }
   .dark-mode header ul a{
     color: #000;
-  }
-  .logo{
-    height: 48px;
   }
   main{
     margin: 2.5em 0;
     padding: 0;
   }
-  h1{
-    font-size: 35px;
-  }
   h3, .other-reviews{
-    font-size: 18px;
-  }
-  .review p{
-    font-size: 14px;
+    font-size: 1.286em;
   }
   .review img{
     max-width: 90%;
   }
   .review iframe{
-    min-height: 12em;
-    max-width: 90%;
+    min-height: 13.714em;
+    max-width: 70%;
   }
   footer ul{
     flex-direction: column;
